@@ -1,0 +1,183 @@
+.container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.shade{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -45%;
+}
+.shade2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#000;
+  opacity: 0.5;
+}
+.blur {	
+ filter: blur(8px);
+}
+.up{
+  width: 100%;
+  /* height: 30%; */
+
+}
+.title{
+  width: 100%;
+  height: 90rpx;
+  color: #fff;
+}
+
+.covers{
+  position: fixed;
+  left: 20rpx;
+  top: 90rpx;
+  z-index: 1;
+  border: 4rpx solid #fff;
+  border-radius: 8rpx;
+  box-shadow: 5rpx 5rpx 5px #888888;
+}
+
+.info{
+  position: relative;
+  height: 200rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.info-c{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  left: 250rpx;
+  
+}
+.name{
+  font-size:40rpx; 
+  font-weight: bold;
+}
+
+.ift-fire:before{
+  content:"\E6A6";
+}
+
+.select{
+  position: relative;
+  height: 90rpx;
+  background-color: #fff;
+  
+}
+.btngroup{
+  position: absolute;
+  right: 0;
+  top:25rpx;
+  padding-right: 60rpx;
+}
+.btn{
+  display: inline-block;
+  border: 1rpx solid #fc6454;
+  width: 200rpx;
+  text-align: center;
+  line-height: 55rpx;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+}
+
+.btn1{
+  color: #fc6454;
+  margin-right: 20rpx;
+}
+
+.btn2{
+  background-color: #fc6454;
+  color: #fff;
+}
+
+
+/* 标题栏相关css */
+.background{
+   background-color:transparent;
+   color: #fff;
+   font-size: 40rpx;
+}
+/* .ift-goback:before{
+  content: "\E69D";
+} */
+.to{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150rpx;
+}
+/* .ift-collect:before{
+  content: "\E6A3";
+}
+.ift-message:before{
+  content: "\E6B8";
+} */
+
+.center{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 30rpx;
+  color: #999;
+  }
+
+
+  .center>view{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 33.3333333%;
+    height: 100%;
+  }
+
+  .sub{
+    color: #fc6454;
+    border-bottom:3rpx solid #fc6454;
+  }
+  .catalog{
+    width: 100%;
+    text-align: center;
+    border-left:1rpx solid #ddd; 
+    border-right:1rpx solid #ddd;
+  }
+
+.down{
+  width: 100%;
+  height: 70%;
+  background-color: #fff;
+}
+.sort{
+  position: absolute;
+  font-size: 25rpx;
+  color: #bdbdbd;
+  right:10rpx;
+}
+
+.chapterlist{
+  height: 330rpx;
+}
+
+.chapterBtn{
+  display: inline-block;
+  margin:0 10rpx 20rpx 27rpx;
+  width:150rpx;
+  line-height: 65rpx;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #555;
+  font-size: 30rpx;
+  border-radius: 5rpx;
+}

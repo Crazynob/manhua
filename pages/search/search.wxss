@@ -1,0 +1,17 @@
+.section{
+  background-color: #fff;
+}
+
+.background{
+  background-color: #fc6454;
+}
+.search{
+  border-radius: 10rpx;
+  background-color:#fff;
+  padding-left: 15rpx;
+  width: 80%;
+  font-size: 25rpx;
+}
+.ift-search{
+  color: #fff;
+}

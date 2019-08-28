@@ -1,0 +1,9 @@
+<import src="/template/banner/banner.wxml"/>
+
+<template is="banner" data='{{images}}'></template>
+
+
+
+<block wx:for='{{arr}}' wx:key='{{index}}'>
+  <mkfloor title="{{book_name[index]}}" summary="永不褪色的记忆" arr="{{item}}"></mkfloor>
+</block>

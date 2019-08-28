@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "title":"/components/base/title/title",
+    "tag": "/components/base/tag/tag"
+  }
+}

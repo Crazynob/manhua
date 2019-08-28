@@ -1,0 +1,118 @@
+<title bg='background'>
+  <view class='center' catchtap='onSelect'>
+    <text class='{{current==0?"select":""}}' data-sub='0' >题材</text>
+    <text class='{{current==1?"select":""}}' data-sub='1'>进度</text>
+    <text class='{{current==2?"select":""}}' data-sub='2'>受众</text>
+    <text class='{{current==3?"select":""}}' data-sub='3'>媒体</text>
+  </view>
+</title>
+
+<swiper style='height:91.89%;' current='{{current}}'  bindchange='onChangeCurrent'>
+  <swiper-item>
+    <scroll-view style='height:100%;' scroll-y>
+      <view class='items'>
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+
+        <view class='item'>
+          <image style='width:132rpx;height:132rpx;' src='https://image.zymkcdn.com/file/sort/000/000/005.png-noresize.webp'></image>
+          <text>热血</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+  2
+  </swiper-item>
+
+  <swiper-item>
+  3
+  </swiper-item>
+
+  <swiper-item>
+  4
+  </swiper-item>
+</swiper>

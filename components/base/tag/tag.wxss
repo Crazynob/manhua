@@ -1,0 +1,29 @@
+.sty{
+  display: inline-block;
+  margin-right: 10rpx;
+  border-radius:15rpx; 
+  padding: 0 15rpx;
+  background-color: #fff;
+  font-size:20rpx;
+}
+.rgb0{
+  background-color:rgb(199, 133, 144);
+}
+
+.rgb1{
+  background-color:rgb(243, 189, 126);
+}
+
+.rgb2{
+  background-color:rgb(110, 196, 233);
+}
+
+
+.rgb3{
+  background-color:rgb(102, 201, 187);
+}
+
+.rgb4{
+  background-color:rgb(155, 155, 213);
+}
+

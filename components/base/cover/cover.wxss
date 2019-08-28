@@ -1,0 +1,35 @@
+.item-img{
+  position: relative;
+  z-index: 1;
+}
+
+.item-img-score{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 26rpx;
+  color: #fff;
+  padding: 0 10rpx 0 10rpx ;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius:20rpx 0 0 20rpx;
+}
+
+.item-img-score::before{
+  content: "\2605  "
+}
+
+.item-img-info{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   color: #fff;
+   font-size: 26rpx;
+   text-align: right;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-image{
+  width: 200rpx;
+  height: 266rpx;
+}

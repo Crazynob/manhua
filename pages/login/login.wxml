@@ -1,0 +1,38 @@
+<image class="shade blur"src='https://image.zymkcdn.com/file/head/008/671/849.jpg-noresize.webp'></image>
+<view class='shade2'></view>
+<view class='header'>
+
+  <view  style='text-align:center;'>
+    <view class='head'>
+      <image style='width:100%;height:100%;' src='https://image.zymkcdn.com/file/head/008/671/849.jpg-noresize.webp'></image>
+    </view>
+
+    <view class='username'>
+      <text style='vertical-align:middle;'>13241111156</text> 
+      <image class='sex' src='https://m.zymk.cn/image/default/icons/female.png'>
+      </image>
+    </view>  
+    
+  </view>
+
+  <view class='iinfo'>
+      <view class='iinfo-up'>
+      </view>
+      <view><text>123456</text></view>
+  </view>
+
+  <view class='tab-title-container'>
+    <text>订阅</text>
+    <text>历史</text>
+  </view>
+
+  <view class='book'>
+  </view>
+
+  <view class='menu-item'>123131231231231</view>
+  <view class='menu-item'>123131231231231</view>
+  <view class='menu-item'>123131231231231</view>
+
+  <button class='login'>登录</button>
+</view>
+

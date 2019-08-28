@@ -1,0 +1,80 @@
+/* pages/login/login.wxss */
+.header{
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  padding-top: 45rpx;
+}
+.shade{
+   position: absolute;
+  width: 180%;
+}
+.shade2{
+  position:absolute;
+  width:100%;
+  height:35%;
+  background-color:rgba(0,0,0,0.3);
+}
+
+.blur {	
+ filter: blur(18px);
+}
+.head{
+  width:130rpx;
+  height:130rpx;
+  border:10rpx solid #ccc; 
+  border-radius:50%;
+  padding:5rpx;
+  margin:0 auto;
+  background-color:#fff;
+}
+.username{
+  margin:20rpx 0 58rpx 0;
+  color:#eee;
+  font-size:35rpx;
+}
+
+.iinfo{
+  margin:0 auto;
+  width:80%;
+  height:160rpx;
+  background-color:#fff;
+  border-radius:20rpx;
+}
+.iinfo-up{
+  background-color:#fc6454;
+  height:60rpx;
+  border-radius:20rpx 20rpx 0 0;
+}
+.sex{
+  width:28rpx;
+  height:28rpx;
+  background-color:#ddd;
+  margin-left:20rpx;
+  padding:5rpx;
+  vertical-align:middle;
+  border-radius:15%;
+}
+
+.tab-title-container{
+  margin-top:20rpx;
+  height:88rpx;
+  background-color:#fff;
+}
+.book{
+  height:405rpx;
+  background-color:#ccc;
+  margin:5rpx 0 15rpx 0;
+}
+.menu-item{
+  background-color: #fff;
+  line-height: 74rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.login{
+  margin: 30rpx auto;
+  width:94%;
+  background-color: #fc6454;
+  color: #fff;
+  font-size: 30rpx;
+}

@@ -1,0 +1,129 @@
+<!-- <view class='shade blur'>
+</view> -->
+<image class="shade blur"src='{{path}}'></image>
+<view class='shade2'></view>
+<view class='container '>
+  <view class='up'>
+      <view class='covers'>
+        <cover
+          src="{{path}}" 
+          score="{{detail.score}}"
+          show="false"
+          >  
+        </cover>
+      </view>
+
+    <!-- <view class='title'>
+      这是标题
+    </view> -->
+
+    <title bg="background">
+      <text class='ift-goback' catchtap='toIndex'></text>
+      <view class='to'>
+        <text class='ift-collect'></text>
+        <text class='ift-message'></text>
+      </view>
+    </title>
+
+    <view class='info'>
+      <view class='info-c'>      
+          <text class='name'>{{detail['comic_name']}}</text>
+          <text>{{detail['author_name']}}</text>
+          <tag text='{{detail["comic_type"]}}'></tag>
+          <text class='ift-fire'> 2.1亿</text>
+      </view>
+    </view>
+
+    <view class='select'>
+      <view class='btngroup'>
+        <navigator class="btn btn1" url=''>离线缓存</navigator>
+        <navigator class="btn btn2" url=''>开始阅读</navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class='center' catchtap='option'>
+    <view data-sub='0' class='{{sub==0?"sub":""}}'>
+      <text data-sub='0'>详情</text>
+    </view>
+
+     <view data-sub='1' class='{{sub==1?"sub":""}}'>
+      <text data-sub='1' class='catalog'>目录</text>
+    </view>
+
+    <view data-sub='2'  class='{{sub==2?"sub":""}}'>
+      <text data-sub='2'>支持</text>
+    </view>
+  </view>
+
+
+
+  <view class='down'>
+
+    <swiper 
+    style='height:100%;'
+    current='{{sub}}'
+    bindchange='onSetSub'
+    >
+      <swiper-item style="">
+        <scroll-view 
+        style='height:85.65%;color:#666;font-size:28rpx;'
+        scroll-y="true">
+            <view style='display:flex;flex-direction:column;border-bottom:1rpx solid #ddd;'>
+              <text style='margin:20rpx 0 0rpx 15rpx;'>剧情简介</text>
+              <text style='padding:20rpx 25rpx;'>{{detail['comic_desc']}}</text>
+            </view>
+
+            <view style='display:flex;flex-direction:column;border-bottom:1rpx solid #ddd;'>
+              <text style='margin:20rpx 0 0rpx 15rpx;;'>作者信息</text>
+              <view style='display:flex;align-items:center;'>
+                      <image src='/image/error.png' 
+                      style='background-color:#fff;width:60rpx;height:60rpx;border-radius:50%;'
+                      mode="">
+                      </image>
+                      <view>
+                        <text>{{detail['author_name']}}</text>
+                        <view><text>粉丝41人</text></view>
+                      </view>
+              </view>
+            </view>
+        </scroll-view>
+      </swiper-item>
+
+
+      <swiper-item>
+        <view style='line-height:100rpx;'>
+          <text style='margin-left:20rpx;font-size:30rpx;color:#bdbdbd;'>最后更新:</text>
+          <text style='font-size:25rpx;'> {{updateTime}}</text>
+          <text class='sort {{sort?"ift-down":"ift-up"}}' catchtap='onSort'>{{sort?"降序":"升序"}}</text>
+        </view>
+
+        <scroll-view 
+         class='chapterlist'
+         scroll-y="true"
+        >
+          
+          <block wx:for='{{imgList}}' wx:key='index'>
+
+            <navigator 
+            class="chapterBtn" 
+            url='/pages/reading/reading?chapter_addr={{item["chapter_addr"]}}&start={{item["start_var"]}}&end={{item["end_var"]}}&chapter_id={{item["chapter_id"]}}'
+            >
+            {{item['chapter_name']}}
+            
+            </navigator>
+
+          </block>
+        </scroll-view>
+      </swiper-item>
+
+
+      <swiper-item>wefjenqwfjewioFHW</swiper-item>
+    </swiper>
+
+    
+  </view>
+
+
+
+</view>

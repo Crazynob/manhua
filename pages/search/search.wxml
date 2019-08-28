@@ -1,0 +1,46 @@
+<title bg='background'>
+  <input class='search' confirm-type='search' placeholder='可按 漫画名 或 漫画家 搜索' bindinput='onInputUpdate'></input>
+  <text class='ift-search'></text>
+</title>
+<view hidden='{{show}}'>
+  <view style='padding:0 0 40rpx 20rpx;' catchtap='onSearch'>
+    <text style='color:#666;font-size:30rpx;'>热门搜索</text>
+    <tag text="{{hot}}">
+    </tag>
+  </view>
+
+  <view style='padding-left:20rpx;'>
+    <view style='position:relative;color:#666;font-size:25rpx;'>
+      <text>搜索历史</text>
+      <text style='position:absolute;right:14rpx;color:#ee0000;'>清空</text>
+    </view>
+
+    <block wx:for='{{searchHistory}}'>
+      <view style='position:relative;border-bottom:1rpx solid;color:#666;line-height:90rpx;'>
+        <text class="ift-clock" style='font-size:30rpx;' ></text>
+        <text style='margin-left:20rpx;font-size:30rpx;'>{{item}}</text>
+        <text class="ift-close" style='position:absolute;right:20rpx;font-size:20rpx;'></text>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<view hidden='{{!show}}'>
+
+ <block wx:for='{{searchData}}'>
+      <view style='position:relative;border-bottom:1rpx solid;color:#666;line-height:90rpx;font-size:28rpx;'>
+        <navigator url='/pages/detail/detail?id={{item.comic_id}}'>
+        {{item.comic_name}}
+        <text style='position:absolute;right:10rpx'>{{item.last_chapter.name}}</text>
+        </navigator>
+        
+      </view>
+    </block>
+</view>
+
+
+
+
+ 
+  

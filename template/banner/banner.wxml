@@ -1,0 +1,19 @@
+<template name="banner">
+    <navigator class='ift-search' url='/pages/search/search'></navigator>
+    <swiper 
+      indicator-dots='true'
+      indicator-color='rgba(255,255,255,1)'
+      indicator-active-color='rgba(252,100,84,1)'
+      current='0'
+      circular='true'
+      catchtap='toDetails'
+      bindchange="onChange"
+    >
+      <block wx:for='{{images}}' wx:key='index'>
+        <swiper-item>
+            <image class='item-img' src='{{item}}'></image>
+            <text class='info'>我我我我我我我我我我我我我我我我我我</text>
+        </swiper-item>
+      </block>
+    </swiper>
+</template>

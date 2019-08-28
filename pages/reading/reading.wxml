@@ -1,0 +1,60 @@
+
+
+  <view class='background' style='transition-duration:2s;' hidden="{{hidden}}">
+    <title>
+      <view class='top'>
+        <text style='font-size:45rpx;'>45话</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <text style='color:#fc6454;'>6</text>
+        <text>/12</text>
+      </view>
+    </title>
+  </view>
+
+  <view class='background background-bottom' hidden="{{hidden}}">
+    <title>
+      <view class='bottom'>
+        <view class='menu'>
+          <text class='icon ift-share'></text>
+          <text>分享</text>
+        </view>
+
+         <view class='menu'>
+          <text class='icon ift-collect'></text>
+          <text>收藏</text>
+        </view>
+
+         <view class='menu' catchtap='onUpper'>
+          <text class='icon ift-prev'></text>
+          <text >上章</text>
+        </view>
+
+         <view class='menu' catchtap='onLower'>
+          <text class='icon ift-next'></text>
+          <text>下章</text>
+        </view>
+      </view>
+    </title>
+  </view>
+
+<scroll-view 
+  catchtap='onHidden' 
+  class='img' 
+  scroll-y  bindscrolltolower="onLower"
+  bindscrolltoupper='onUpper' 
+  enable-back-to-top='true'
+  bindscroll='onScroll'>
+
+    <block wx:for='{{chapter_list}}' wx:for-index='i' wx:for-item='addr' wx:key="i">
+      <block wx:for='{{end[i]}}' wx:for-index='j' wx:key='j'>
+          <image 
+            class='img'
+            src='https://mhpic.zymkcdn.com/comic/{{addr.chapter_addr}}{{j+1}}.jpg-zymk.middle.webp' 
+            lazy-load="true">
+          </image>
+      </block>
+    </block>
+</scroll-view>
+
+  
+

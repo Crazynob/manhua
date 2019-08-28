@@ -1,0 +1,5 @@
+   <view class='item-img'>
+      <text class='item-img-score'>{{score}}</text>
+      <image src="{{src}}" class="slide-image" data-cid="{{cid}}"/>
+      <text class='item-img-info' wx:if="{{show}}">{{chapter}}</text>
+    </view>

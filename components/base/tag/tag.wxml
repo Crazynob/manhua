@@ -1,0 +1,8 @@
+<view>
+<block wx:for='{{text}}' wx:key='index'>
+  <navigator url='{{item.id}}' class='sty rgb{{index%5}}'>{{item.name}}</navigator>
+
+</block>
+
+</view>
+

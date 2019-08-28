@@ -1,0 +1,7 @@
+
+
+<view class='container bg'>
+  <view class='inner'>
+    <slot></slot>
+  </view>
+</view>

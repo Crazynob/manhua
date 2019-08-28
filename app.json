@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/classify/classify",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/reading/reading",
+    "pages/logs/logs",
+    
+    "pages/discover/discover",
+    "pages/comiclist/comiclist",
+    "pages/search/search"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#fc6454",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/shouye.png",
+        "selectedIconPath": "/image/shouye-s.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "/image/fenlei.png",
+        "selectedIconPath": "/image/fenlei-s.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "/image/faxian.png",
+        "selectedIconPath": "/image/faxian-s.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "/image/wode.png",
+        "selectedIconPath": "/image/wode-s.png"
+      }
+    ]
+  }
+}

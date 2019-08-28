@@ -1,0 +1,36 @@
+
+swiper{
+  position: relative;
+  height: 280rpx;
+}
+.item-img{
+  width: 100%;
+  height: 100%;
+}
+.info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20rpx;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.ift-search{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;    
+  background-color:rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  border-radius:50%; 
+  font-size: 40rpx;
+  text-align: center;
+  color: #fff;
+}
+.ift-search:before{
+  content: "\E6AB";
+}

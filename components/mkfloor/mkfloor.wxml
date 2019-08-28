@@ -1,0 +1,38 @@
+<view class='part'>
+
+  <view class='main'>
+    <text class="title">{{title}} </text>
+    <text class='summary'>{{summary}}</text>
+    <navigator  url="/pages" class='more'>更多</navigator>
+  </view>
+
+  <view class='container' catchtap='toDetails'>
+
+    <swiper class='swipers' 
+      display-multiple-items='{{config.displayMultipleItems}}' 
+      next-margin="{{config.nextMargin}}" 
+      previous-margin="{{config.previousMargin}}"
+    >
+    <block wx:for="{{arr}}" wx:key="index">
+
+     <swiper-item >
+          <view class='item' >
+            <cover
+              data-cid="{{item.comic_id}}"
+              src="{{item.src}}" 
+              score="{{item.score}}"
+              chapter="{{item.last_chapter.name}}">
+            </cover>
+
+            <text class='name' data-cid="{{item.comic_id}}">{{item.comic_name}}</text>
+            <text class='desc summary' data-cid="{{item.comic_id}}">{{item.content}}</text>
+          </view>
+      </swiper-item> 
+
+    </block>
+    </swiper>
+
+  </view>
+
+
+</view>
